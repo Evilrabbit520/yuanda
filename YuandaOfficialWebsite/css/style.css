@@ -526,6 +526,21 @@ figure.effect-moses:hover img {
 }
 /*--moses--*/
 /*Sliding Text and Icon Menu Style*/
+.ydwj {
+    position: relative;
+}
+.ydwj li {
+    list-style: none;
+    float: left;
+    margin: 0 3% 6% 3%;
+    width: 33.3%;/*»˝¡–Õº∆¨≈≈¡–*/
+}
+.ydwj li a {
+        /*width: 50%;*/
+    }
+.ydwj li a img {
+        width: 100%;
+    }
 .sti-menu{
 	position:relative;
 }

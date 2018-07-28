@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="Main_index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Main_index" %>
 
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -11,8 +11,8 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -24,13 +24,11 @@
         });
     </script>
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    <%--字库--%>
     <!-- //fonts -->
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="../js/move-top.js"></script>
+    <script type="text/javascript" src="../js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -56,17 +54,17 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <h1><a class="navbar-brand" href="index"><i></i>LOGO</a></h1>
+                            <h1><a class="navbar-brand" href="index"><i></i>远大钢构</a></h1>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav ">
                                 <li><a class="active" href="index">主页</a></li>
-                                <li><a href="../About/about">关于</a></li>
-                                <li><a href="../Gallery/gallery">图库</a></li>
+                                <li><a href="About/about">关于</a></li>
+                                <li><a href="Gallery/gallery">图库</a></li>
                                 <%--<li><a  href="shortcodes.html">shortcodes</a></li>--%>
-                                <li><a href="../Services/services">服务</a></li>
-                                <li><a href="../Contact/contact">联系</a></li>
+                                <li><a href="Services/services">服务</a></li>
+                                <li><a href="Contact/contact">联系</a></li>
                                 <li><a href="../../index.html">DATA:实价:-- ;预价:--</a></li>
                             </ul>
                             <%--<ul>
@@ -119,7 +117,7 @@
                         </li>
                         <li>
                             <div class="banner-info">
-                                <h3>我们带着希望从2008走来只为给您<span>一间完整的“作品”</span></h3>
+                                <h3>我们带着希望从2008走来 只为给您<span>一间完整的“作品”</span></h3>
                                     <p>我们从未停歇</p>
                             </div>
                         </li>
@@ -163,9 +161,9 @@
                 而我们也有机会成就最杰出的作品。
             </p>
         </div>
-        <%--<div class="col-md-6 content-right">
-            <img class="img-responsive" src="images/pic11.png" alt=" " />
-        </div>--%>
+        <div class="col-md-6 content-right">
+            <img class="img-responsive" src="images/pic11.jpg" alt=" " />
+        </div>
         <div class="clearfix"></div>
     </div>
 
@@ -173,50 +171,30 @@
         <h3>远大为基&emsp;助力成长</h3>
         <div class="container">
             <div class="col-md-6 bottom-left text-center">
-                <%--<ul id="sti-menu" class="sti-menu">
+                <ul class="sti-menu">
                     <li data-hovercolor="#fff">
-                        <a href="#">
+                        <a href="#" title="如何成为广告主">
                             <img src="images/pic1.jpg" alt="" />
-                            <h4 data-type="mText" class="sti-item">PERFORMANCE</h4>
-                            <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
+                            <h4 data-type="mText" class="sti-item">广告主</h4>
+                            <p data-type="sText" class="sti-item">远大为基 助力成长</p>
                         </a>
                     </li>
-                    <li data-hovercolor="#fff">
-                        <a href="#">
-                            <h4 data-type="mText" class="sti-item">INNOVATIONS</h4>
-                            <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
-                            <span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
-                        </a>
-                    </li>
-                    <li data-hovercolor="#fff">
-                        <a href="#">
-                            <h4 data-type="mText" class="sti-item">RESEARCH</h4>
-                            <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
-                            <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
-                        </a>
-                    </li>
-                    <li data-hovercolor="#fff">
-                        <a href="#">
-                            <h4 data-type="mText" class="sti-item">TECHNOLOGIES</h4>
-                            <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
-                            <span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
-                        </a>
-                    </li>
-
-
-                </ul>--%>
+                </ul>
                 <div class="clearfix"></div>
             </div>
 
-            <%--<div class="col-md-6 bottom-right  grid">
+            <div class="col-md-6 bottom-right grid">
                 <figure class="effect-moses">
-                    <img src="images/pic1.jpg" alt="" />
-                    <figcaption>
+                    <a href="https://www.idigitaltechnology.com/" title="数维官网">
+                        <img src="images/DigitalT.png" alt="" />
+                    </a>
+                    <%--<figcaption>
                         <h4>广告招募</h4>
                         <p>与数维一起，多一份收入成为广告主吧.</p>
-                    </figcaption>
+                    </figcaption>--%>
                 </figure>
-            </div>--%>
+            </div>
+
             <div class="clearfix"></div>
         </div>
     </div>
@@ -286,17 +264,17 @@
             <div class="col-md-3 footer-grids">
                 <h3>网站导航</h3>
                 <ul>
-                    <li><a href="index.html">网站主页</a></li>
-                    <li><a href="about.html">关于远大</a></li>
-                    <li><a href="gallery.html">图库</a></li>
-                    <li><a href="shortcodes.html">服务支持</a></li>
-                    <li><a href="services.html">联系我们</a></li>
+                    <li><a href="Default">网站主页</a></li>
+                    <li><a href="About/about">关于远大</a></li>
+                    <%--<li><a href="gallery.html">图库</a></li>--%>
+                    <li><a href="javascript:void(0)">服务支持</a></li>
+                    <li><a href="Services/services.html">联系我们</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grids">
                 <h3>合作伙伴</h3>
                 <ul>
-                    <li><a href="#">数维科技</a></li>
+                    <li><a href="https://www.idigitaltechnology.com/">数维科技</a></li>
                 </ul>
             </div>
             <div class="col-md-3 social-icons">
@@ -309,17 +287,16 @@
             </div>
             <div class="col-md-3 footer-grids">
                 <h3>地址</h3>
-                <h2><a href="index.html">远大钢构</a></h2>
+                <h2><a href="Default">远大钢构</a></h2>
                 <ul>
                     <li>甘肃省 酒泉市 肃州区</li>
                     <li>腾达路 3 号(厂区)</li>
                     <li>电话: +86 18809371058</li>
-
                     <li>电子邮件: <a href="mailto:info@example.com">evilrabbit520@gmail.com</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
-            <p>Copyright &copy; 远大钢结构有限公司 版权所有 - 网站由<a href="https://www.idigitaltechnology.com/" title="数维科技官网">数维互联网科技有限公司</a>开发发布。</p>
+            <p>Copyright &copy; 远大钢结构有限公司 版权所有 - 网站由<a href="https://www.idigitaltechnology.com/" title="数维科技官网">数维互联网科技有限公司</a>开发运营。</p>
         </div>
     </div>
     <!-- //footer-top -->
